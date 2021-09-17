@@ -1,0 +1,51 @@
+h2 {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+select {
+    flex: 1;
+    align-self: center;
+}
+
+button {
+    flex: 1;
+}
+
+input.ng-touched.ng-invalid{
+    border-color: red;
+}
+  
+.error{
+    color: red;
+}
+
+.mat-divider.mat-divider-inset {
+    margin-left: 0;
+}
+
+.submit-button {
+    background-color: #3aafda;
+    color: white;
+}
+
+.reject-button {
+    background-color: gray;
+    color: white;
+}
+
+.mat-dialog-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-on-toolbar {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.mat-form-field-appearance-outline.mat-form-field-outline-thick {
+    color: #3aafda;
+    outline-color: #3aafda;
+    
+}

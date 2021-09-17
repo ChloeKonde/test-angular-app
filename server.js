@@ -6,7 +6,7 @@ const app = express();
 app.use(express.static(__dirname + '/dist/angular-app'));
 
 app.get('/*', (req,res,next) => {
-    res.sendFile(path.join(__dirname + 'dist/angular-app/index.html'));
+    res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
 
 

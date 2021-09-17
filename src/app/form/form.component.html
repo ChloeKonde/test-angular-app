@@ -1,0 +1,29 @@
+<h2 mat-dialog-title>НОВАЯ ЗАДАЧА</h2>
+<div mat-dialog-content [formGroup]="addingTodoForm">
+    <mat-divider [inset]=true></mat-divider>
+
+    <mat-form-field appearance="outline">
+        <mat-label for="todo-text">Название задачи...</mat-label>
+        <input matInput placeholder="Название задачи..." id="todo-text" formControlName="todo-text">
+    </mat-form-field>
+    <!-- <div class="error" *ngIf="isControlInvalid('todo-text')">
+        Имя должно состоять только из русских букв
+      </div>  -->
+
+    <mat-form-field class="todo-category" appearance="outline">
+        <mat-label>Категория</mat-label>
+        <mat-select matNativeControl>
+            <mat-option value="family">Семья</mat-option>
+            <mat-option value="work">Работа</mat-option>
+            <mat-option value="other">Прочее</mat-option>         
+        </mat-select>
+    </mat-form-field>
+</div>
+
+<div mat-dialog-actions class="button-group"> 
+    <button mat-raised-button class="reject-button"(click)="onClose()">ОТМЕНА</button>
+    &nbsp;
+    &nbsp;
+    <button mat-raised-button class="submit-button" (click)="onSubmit()">ОК</button>
+</div>
+

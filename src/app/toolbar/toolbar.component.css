@@ -1,0 +1,14 @@
+.text-on-toolbar {
+    flex: 1 1 auto;
+    text-align: center;
+    color: white;
+}
+
+mat-toolbar {
+    background-color: #3aafda;
+}
+
+.add-icon {
+    color: white;
+    background-color: #3aafda;
+}
